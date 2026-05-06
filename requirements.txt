@@ -1,0 +1,7 @@
+python-telegram-bot
+python-dotenv
+bleach
+httpx
+apscheduler
+Pillow
+mysql-connector-python

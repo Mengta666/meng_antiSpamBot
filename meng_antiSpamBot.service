@@ -1,0 +1,15 @@
+[Unit]
+Description=Meng Anti-Spam Bot
+After=network.target
+
+[Service]
+ExecStart=/opt/meng_antiSpamBot/venv/bin/python3 /opt/meng_antiSpamBot/bot.py
+WorkingDirectory=/opt/meng_antiSpamBot
+EnvironmentFile=/opt/meng_antiSpamBot/config.env
+Restart=always
+RestartSec=5
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
